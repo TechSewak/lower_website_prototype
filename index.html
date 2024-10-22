@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saraswat & Singh Law Associates</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <header class="bg-blue-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Saraswat & Singh</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-blue-300 transition duration-150">Home</a>
+                <a href="#about" class="hover:text-blue-300 transition duration-150">About</a>
+                <a href="#services" class="hover:text-blue-300 transition duration-150">Services</a>
+                <a href="#contact" class="hover:text-blue-300 transition duration-150">Contact</a>
+            </nav>
+            <button id="menu-toggle" class="md:hidden" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+                <span class="sr-only">Toggle menu</span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-blue-800 hidden">
+            <nav class="container mx-auto px-4 py-2 flex flex-col">
+                <a href="#home" class="py-2 hover:text-blue-300 transition duration-150">Home</a>
+                <a href="#about" class="py-2 hover:text-blue-300 transition duration-150">About</a>
+                <a href="#services" class="py-2 hover:text-blue-300 transition duration-150">Services</a>
+                <a href="#contact" class="py-2 hover:text-blue-300 transition duration-150">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 fade-in">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Expert Legal Solutions</h2>
+                <p class="text-xl mb-8">Protecting Your Rights with Dedication and Expertise</p>
+                <a href="#contact" class="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">
+                    Get Free Consultation
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 fade-in">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Our Esteemed Advocates</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://via.placeholder.com/300x400" alt="Brajesh Saraswat" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Brajesh Saraswat</h3>
+                            <p class="text-gray-600 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                7983043791
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://via.placeholder.com/300x400" alt="Om Kumar Singh" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Om Kumar Singh</h3>
+                            <p class="text-gray-600 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                8445484999
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 bg-gray-100 fade-in">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Our Legal Expertise</h2>
+                <div class="space-y-4" id="specialties">
+                    <!-- Specialties will be dynamically added here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 fade-in">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded font-semibold hover:bg-blue-800 transition duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <p>Collectorate Court, District Aligarh, Uttar Pradesh</p>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <p>7983043791 / 8445484999</p>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <p>info@saraswatsinghlaw.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; <span id="current-year"></span> Saraswat & Singh Law Associates. All rights reserved.</p>
+            <p class="mt-2">Serving justice with excellence since 1995</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
