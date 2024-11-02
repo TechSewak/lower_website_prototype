@@ -6,13 +6,17 @@
     <title>Saraswat & Singh Law Associates</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Expert legal solutions by Saraswat & Singh Law Associates in Aligarh, UP">
+    <meta name="keywords" content="law firm, legal services, Aligarh, Uttar Pradesh, advocates">
+    <meta name="author" content="Saraswat & Singh Law Associates">
 </head>
+
 <body class="min-h-screen bg-gray-50">
     <header class="bg-blue-900 text-white sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold">Saraswat & Singh</h1>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#home" class="hover:text-blue-300 transition duration-150">Home</a>
+            <nav class="hidden md:flex space-x-6" aria-label="Main navigation">
+                <a href="#home" class="hover:text-blue-300 transition duration-150" aria-current="page">Home</a>
                 <a href="#about" class="hover:text-blue-300 transition duration-150">About</a>
                 <a href="#services" class="hover:text-blue-300 transition duration-150">Services</a>
                 <a href="#contact" class="hover:text-blue-300 transition duration-150">Contact</a>
@@ -50,7 +54,14 @@
                 <h2 class="text-3xl font-bold mb-8 text-center">Our Esteemed Advocates</h2>
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://via.placeholder.com/300x400" alt="Brajesh Saraswat" class="w-full h-64 object-cover">
+                        <img 
+                            src="https://via.placeholder.com/300x400" 
+                            alt="Brajesh Saraswat" 
+                            loading="lazy"
+                            width="300"
+                            height="400"
+                            class="w-full h-64 object-cover"
+                        >
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Brajesh Saraswat</h3>
                             <p class="text-gray-600 flex items-center">
@@ -91,8 +102,14 @@
                 <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
                 <div class="grid md:grid-cols-2 gap-8">
                     <div>
-                        <form class="space-y-4">
-                            <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <form class="space-y-4" id="contact-form" novalidate>
+                            <input 
+                                type="text" 
+                                placeholder="Your Name" 
+                                required 
+                                minlength="2"
+                                class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            >
                             <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500">
                             <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                             <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded font-semibold hover:bg-blue-800 transition duration-300">
@@ -119,6 +136,96 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                             <p>info@saraswatsinghlaw.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consulting Fee Section -->
+        <section id="fees" class="py-16 bg-gray-50 fade-in">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Consulting Fee</h2>
+                
+                <!-- Experience Badge -->
+                <div class="text-center mb-8">
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full inline-block">
+                        <span class="font-bold">Practicing Since 2008</span> • 15+ Years Experience
+                    </span>
+                </div>
+
+                <!-- Fee Card -->
+                <div class="max-w-2xl mx-auto">
+                    <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                        <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold text-blue-900">Initial Consultation</h3>
+                                <p class="text-gray-600">One-on-one legal consultation</p>
+                            </div>
+                            <div class="text-3xl font-bold text-blue-600">₹500</div>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>30 Minutes Detailed Discussion</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Case Evaluation</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Initial Legal Advice</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Details -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Bank Details -->
+                        <div class="bg-white rounded-lg shadow-lg p-6">
+                            <h4 class="text-xl font-bold text-blue-900 mb-4">Bank Transfer Details</h4>
+                            <div class="space-y-2">
+                                <p><span class="font-semibold">Account Name:</span> Saraswat & Singh Law Associates</p>
+                                <p><span class="font-semibold">Bank Name:</span> [Bank Name]</p>
+                                <p><span class="font-semibold">Account No:</span> XXXX XXXX XXXX</p>
+                                <p><span class="font-semibold">IFSC Code:</span> XXXXX0000XXX</p>
+                                <p><span class="font-semibold">Branch:</span> Aligarh</p>
+                            </div>
+                        </div>
+
+                        <!-- QR Code -->
+                        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                            <h4 class="text-xl font-bold text-blue-900 mb-4">Scan to Pay</h4>
+                            <!-- Replace 'qr-code.png' with your actual QR code image -->
+                            <img 
+                                src="path/to/qr-code.png" 
+                                alt="Payment QR Code" 
+                                class="mx-auto max-w-[200px] mb-4"
+                            >
+                            <p class="text-sm text-gray-600">Scan using any UPI app</p>
+                        </div>
+                    </div>
+
+                    <!-- Important Note -->
+                    <div class="mt-8 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm text-yellow-700">
+                                    Please save the payment receipt. Consultation will be scheduled after payment confirmation.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
